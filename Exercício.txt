@@ -1,0 +1,11 @@
+Desenvolva um exercício em Java de nível avançado que envolva a criação de um simulador de batalhas épicas entre diferentes tipos de guerreiros. Utilize os conceitos de "enum" e "classes abstratas" para implementar a solução.
+O exercício deve seguir as seguintes especificações:
+1.	Crie um enum chamado "TipoGuerreiro" com os seguintes valores: GUERREIRO, ARQUEIRO, MAGO.
+2.	Crie uma classe abstrata chamada "Guerreiro" com os seguintes atributos protegidos: "nome" (String), "pontosVida" (int) e "pontosAtaque" (int).
+3.	Implemente um construtor na classe "Guerreiro" que receba e inicialize os atributos "nome", "pontosVida" e "pontosAtaque".
+4.	Crie três classes concretas que herdam da classe abstrata "Guerreiro": "GuerreiroFisico", "Arqueiro" e "Mago".
+5.	Nas classes concretas, implemente um método abstrato chamado "atacar(Guerreiro alvo)" que representa a ação de ataque do guerreiro.
+6.	Nas classes concretas, implemente também o método "defender(int pontosAtaque)" que representa a ação de defesa do guerreiro. Esse método deve calcular os danos sofridos com base nos pontos de ataque recebidos.
+7.	Crie uma classe chamada "Arena" com um método chamado "batalhar(Guerreiro guerreiro1, Guerreiro guerreiro2)" que simula uma batalha entre dois guerreiros. A batalha deve ocorrer em rodadas, onde os guerreiros alternam ataques e defesas até que um deles fique com pontos de vida igual ou inferior a zero.
+8.	No método "main" da classe "Main", crie instâncias das classes "GuerreiroFisico", "Arqueiro" e "Mago" para representar diferentes guerreiros. Em seguida, chame o método "batalhar()" da classe "Arena" passando os guerreiros como parâmetros.
+O exercício tem como objetivo praticar o uso de enums e classes abstratas na criação de um simulador de batalhas épicas. Além disso, ele visa reforçar conceitos de herança, polimorfismo e encapsulamento em Java.
